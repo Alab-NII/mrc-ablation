@@ -1,0 +1,52 @@
+{
+  "children_stories": {
+    "em": 43.7,
+    "f1": 51.5,
+    "turns": 1425
+  },
+  "literature": {
+    "em": 42.8,
+    "f1": 48.3,
+    "turns": 1630
+  },
+  "mid-high_school": {
+    "em": 46.6,
+    "f1": 53.1,
+    "turns": 1653
+  },
+  "news": {
+    "em": 49.5,
+    "f1": 56.1,
+    "turns": 1649
+  },
+  "wikipedia": {
+    "em": 49.1,
+    "f1": 55.2,
+    "turns": 1626
+  },
+  "reddit": {
+    "em": 0.0,
+    "f1": 0.0,
+    "turns": 0
+  },
+  "science": {
+    "em": 0.0,
+    "f1": 0.0,
+    "turns": 0
+  },
+  "in_domain": {
+    "em": 46.4,
+    "f1": 52.9,
+    "turns": 7983
+  },
+  "out_domain": {
+    "em": 0.0,
+    "f1": 0.0,
+    "turns": 0
+  },
+  "overall": {
+    "em": 46.4,
+    "f1": 52.9,
+    "turns": 7983
+  }
+}
