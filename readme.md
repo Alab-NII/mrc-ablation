@@ -28,24 +28,29 @@ Coming soon.
 
 Each dataset directory under `results` contains following directories:
 
-|    | Ablation method                  | Directory                             | Description                                                                                                            |
-|----|----------------------------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| 0  | original                         | `original`                            | the original data (development set)                                                                                    |
-| 1  | Question interrogatives only     | `drop_question_except_interrogatives` | drop question words except interrogatives (wh*, how)                                                                   |
-| 2  | Function words only              | `drop_content_words`                  | drop content words (verb, noun, ...)                                                                                   |
-| 3  | Content words only               | `drop_function_words`                 | drop function words (= stop words here)                                                                                |
-| 4  | Vocabulary anonymization         | `vocab_anon`                          | replace tokens with their POS tags                                                                                     |
-| 5  | Question-context similarity      | `drop_except_most_similar_sentences`  | keep the sentences that are the most similar to the question in terms of unigram overlap and drop the other sentences. |
-| 6  | Shuffle context words            | `shuffle_document_words`              | randomly shuffle all words in the context                                                                              |
-| 7  | Shuffle sentence words           | `shuffle_sentence_words`              | randomly shuffle the words in all the sentences except the last token                                                  |
-| 8  | Shuffle sentence order           | `shuffle_sentence_order`              | randomly shuffle the order of the sentences in the context                                                             |
-| 9  | Dummy numerics                   | `mask_numerics`                       | replace numerical expressions with random numbers                                                                      |
-| 10 | Logical words dropped            | `drop_logical_words`                  | drop logical terms such as *not*, *every*, and *if*                                                                    |
-| 11 | Pronoun words dropped            | `mask_pronouns`                       | drop personal and possessive pronouns (PRP and PRP$ tags)                                                              |
-| 12 | Causal words dropped             | `drop_causal_words`                   | drop causal terms/clauses such as *because* and *therefore*                                                            |
-| 3' | (trained) content words only     | `train_content_only`                  | drop function words (= stop words here) (also in training)                                                             |
-| 6' | (trained) shuffle context words  | `train_doc_shuff`                     | randomly shuffle all words in the context (also in training)                                                           |
-| 7' | (trained) shuffle sentence words | `train_sent_shuff`                    | randomly shuffle the words in all the sentences except the last token (also in training)                               |                                                    |
+|      | Ablation method                           | Directory                             | Description                                                                                                            |
+|------|-------------------------------------------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| 0    | original                                  | `original`                            | the original data (development set)                                                                                    |
+| 1    | Question interrogatives only              | `drop_question_except_interrogatives` | drop question words except interrogatives (wh*, how)                                                                   |
+| 2    | Function words only                       | `drop_content_words`                  | drop content words (verb, noun, ...)                                                                                   |
+| 3    | Content words only                        | `drop_function_words`                 | drop function words (= stop words here)                                                                                |
+| 4    | Vocabulary anonymization                  | `vocab_anon`                          | replace tokens with their POS tags                                                                                     |
+| 5    | Question-context similarity               | `drop_except_most_similar_sentences`  | keep the sentences that are the most similar to the question in terms of unigram overlap and drop the other sentences. |
+| 6    | Shuffle context words                     | `shuffle_document_words`              | randomly shuffle all words in the context                                                                              |
+| 7    | Shuffle sentence words                    | `shuffle_sentence_words`              | randomly shuffle the words in all the sentences except the last token                                                  |
+| 8    | Shuffle sentence order                    | `shuffle_sentence_order`              | randomly shuffle the order of the sentences in the context                                                             |
+| 9    | Dummy numerics                            | `mask_numerics`                       | replace numerical expressions with random numbers                                                                      |
+| 10   | Logical words dropped                     | `drop_logical_words`                  | drop logical terms such as *not*, *every*, and *if*                                                                    |
+| 11   | Pronoun words dropped                     | `mask_pronouns`                       | drop personal and possessive pronouns (PRP and PRP$ tags)                                                              |
+| 12   | Causal words dropped                      | `drop_causal_words`                   | drop causal terms/clauses such as *because* and *therefore*                                                            |
+| 3'   | (trained) content words only              | `train_content_only`                  | drop function words (= stop words here) (also in training)                                                             |
+| 6'   | (trained) shuffle context words           | `train_doc_shuff`                     | randomly shuffle all words in the context (also in training)                                                           |
+| 7'   | (trained) shuffle sentence words          | `train_sent_shuff`                    | randomly shuffle the words in all the sentences except the last token (also in training)                               |
+| x   | Context dropped                           | `drop_question_words`                 | drop all question words                                                                                                |
+| y   | Question dropped                          | `drop_context_words`                  | drop all context words                                                                                                 |
+| z   | Options only                              | `drop_except_options`                 | drop all question and context words (only for multiple choice datasets)                                                 |
+
 
 There are results of five different seeds for the shuffle-based methods (`seed1` to `seed12345`).
+
 Each result directory has `args_log.txt` that specifies hyperparameters.
