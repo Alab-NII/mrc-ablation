@@ -22,7 +22,7 @@ This is a repository for the paper "Assessing the Benchmarking Capacity of Machi
 
 Our codebase is extended from [huggingface's BERT implementation](https://github.com/huggingface/transformers) (originally `huggingface/pytorch-pretrained-bert` as of Nov. 2018).
 
-Coming soon.
+Find [here](https://github.com/penzant/bert-for-mrc) (to be merged).
 
 ### Ablation Methods
 
