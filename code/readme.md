@@ -1,4 +1,4 @@
-# Input Ablation for Machine Reading Comprehension using BERT
+# Input Ablation for Machine Reading Comprehension
 
 Our codebase is extended from [huggingface's BERT implementation](https://github.com/huggingface/transformers) (originally `huggingface/pytorch-pretrained-bert` as of Nov. 2018).
 
