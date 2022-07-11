@@ -18,12 +18,6 @@ This is a repository for the paper "Assessing the Benchmarking Capacity of Machi
 | 10 | SWAG     | 2018 | [link](https://rowanzellers.com/swag/)                                                                                        | machine-generated commonsense QA | 113k | [link](https://www.aclweb.org/anthology/D18-1009/) |      |
 
 
-### Scripts for Ablation
-
-Our codebase is extended from [huggingface's BERT implementation](https://github.com/huggingface/transformers) (originally `huggingface/pytorch-pretrained-bert` as of Nov. 2018).
-
-Find [here](https://github.com/penzant/bert-for-mrc) (to be merged).
-
 ### Ablation Methods
 
 Each dataset directory under `results` contains following directories:
